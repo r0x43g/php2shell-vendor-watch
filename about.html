@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com">
+<meta name="referrer" content="no-referrer">
+<title>About &mdash; PHP2Shell Vendor Watch</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="bar"><div class="wrap"><div class="hrow">
+  <a class="brand" href="index.html">PHP2Shell Vendor Watch</a>
+  <span class="cve">CVE-2026-109618 &middot; CVE-2026-109619</span>
+  <span class="statusbox"><a class="about-link" href="index.html">&larr; Tracker</a></span>
+</div></div></header>
+<main class="wrap prose">
+  <h1>About this tracker</h1>
+  <p class="lead">A free, live, single-page tracker of the vendors and software affected by the PHP2Shell remote-code-execution vulnerabilities <strong>CVE-2026-109618</strong> and <strong>CVE-2026-109619</strong>, fixed upstream in PHP 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12.</p>
+
+  <h2>What PHP2Shell is</h2>
+  <p>PHP2Shell is a pair of remote-code-execution flaws in the way PHP handles web requests. The exposed surface is the web request handlers &mdash; PHP-FPM, Apache with <code>mod_php</code>, <code>php-cgi</code> and LiteSpeed among them &mdash; so a site served by an affected PHP runtime is in scope until it is upgraded. Moving to a fixed PHP release is the remedy.</p>
+
+  <h2>The three views</h2>
+  <ul>
+    <li><strong>Actionable</strong> &mdash; only entries that are Vulnerable or have a Fix for either CVE: the rows worth acting on first.</li>
+    <li><strong>Full list</strong> &mdash; the complete inventory, every status, including investigation leads.</li>
+    <li><strong>Index A&ndash;Z</strong> &mdash; a directory of every supplier, with product counts, a status mix, and a link to the supplier&rsquo;s page in the source.</li>
+  </ul>
+  <p>In any view you can search by vendor or product and filter by status.</p>
+
+  <h2>Live data, and an offline build</h2>
+  <p>On every open the page fetches the list live from the NCSC-NL php2shell repository and rebuilds all views, so it is current each time it loads. If the live fetch is blocked it falls back to an embedded snapshot. A single-file <strong>offline build</strong> that makes no network requests is available for air-gapped environments or networks where GitHub is blocked.</p>
+
+  <h2>Reading the data</h2>
+  <p>Status is shown per CVE; it is the same for CVE-2026-109618 and -109619 for almost every entry, and where it differs both are shown. The <strong>Source</strong> column lists every link the source cites for a row &mdash; human and advisory pages first, raw code files last &mdash; and each link shows its full URL on hover. Entries are investigation leads until the vendor confirms: always check the vendor&rsquo;s own advisory before acting.</p>
+
+  <h2>Security &amp; privacy</h2>
+  <p>This is a static page with no backend, no cookies, no analytics and no tracking of any kind. It is hardened with a strict Content-Security-Policy, all data is HTML-escaped, and source links are restricted to <code>http(s)</code>. The offline build makes no network requests at all.</p>
+</main><footer class="attrib"><div class="wrap"><p>
+  <strong>Data source &amp; licence.</strong> Every view reproduces the software inventory from the
+  <a href="https://github.com/NCSC-NL/php2shell" target="_blank" rel="noopener noreferrer">NCSC-NL php2shell repository</a>,
+  &copy; NCSC-NL (Nationaal Cyber Security Centrum, Netherlands), licensed under the
+  <a href="LICENSE" target="_blank" rel="noopener noreferrer">EUPL-1.2</a> and published as TLP:CLEAR.
+  Independent derivative work, not affiliated with or endorsed by NCSC-NL. Entries are investigation leads until the vendor confirms.
+</p></div></footer><footer class="attrib"><div class="wrap"><p>Prepared by Ahmed Mekki &middot; <a href="mailto:ahmed@mekki.me">ahmed@mekki.me</a></p></div></footer>
+</body>
+</html>

@@ -86,7 +86,7 @@ function goLive(){ var dot=$("dot"),txt=$("livetxt"); if(dot){dot.className="dot
     DATA.full=out; DATA.actionable=out.filter(function(r){ var k=cb(r); return k==="crit"||k==="fix"; });
     if(okn<LETTERS.length){ if(dot){dot.className="dot stale";} if(txt){txt.textContent="LIVE "+okn+"/"+LETTERS.length+" lists \u00b7 "+tnow()+" ("+out.length+" products)";} }
     else { if(dot){dot.className="dot live";} if(txt){txt.textContent="LIVE \u00b7 "+tnow()+" ("+out.length+" products)";} }
-  }).catch(function(e){ if(dot){dot.className="dot stale";} if(txt){txt.textContent="Snapshot 2026-10-23 15:13 Cairo (UTC+3) (live blocked: "+e.message+")";}
+  }).catch(function(e){ if(dot){dot.className="dot stale";} if(txt){txt.textContent="Snapshot 2026-10-23 19:20 Cairo (UTC+3) (live blocked: "+e.message+")";}
   }).then(function(){ recount(); setStatusOptions(); render(); });
 }
 if($("refresh")) $("refresh").addEventListener("click",goLive);
