@@ -14,16 +14,12 @@
   <div class="hrow">
     <h1>PHP2Shell Vendor Watch</h1>
     <span class="cve">CVE-2026-109618 &middot; CVE-2026-109619</span>
-    <span class="statusbox">
-      <span class="dot loading" id="dot"></span>
-      <span class="livetxt" id="livetxt">Fetching live&hellip;</span>
-      <button class="rfr" id="refresh" type="button">Refresh</button>
-    </span>
+    <span class="statusbox"><span class="dot loading" id="dot"></span><span class="livetxt" id="livetxt">Fetching live&hellip;</span><button class="rfr" id="refresh" type="button">Refresh</button></span>
   </div>
   <div class="tabs" role="tablist" id="tabs">
-    <button class="tab" role="tab" type="button" data-view="verified">Verified <small id="c-verified"></small></button>
     <button class="tab" role="tab" type="button" data-view="actionable">Actionable <small id="c-actionable"></small></button>
     <button class="tab" role="tab" type="button" data-view="full">Full list <small id="c-full"></small></button>
+    <button class="tab" role="tab" type="button" data-view="index">Index A&ndash;Z <small id="c-index"></small></button>
   </div>
 </div></header>
 <main class="wrap">
@@ -34,20 +30,14 @@
   <div class="tiles" id="tiles"></div>
   <p class="note" id="viewnote"></p>
   <div class="tablewrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
-  <p class="foot">
-    <strong>Live.</strong> On open this page fetches the NCSC-NL list from <code>raw.githubusercontent.com/NCSC-NL/php2shell</code> and rebuilds the Actionable and Full views. The <em>Verified</em> tab is a hand-checked vendor set (independent snapshot). If the live fetch is blocked it falls back to an embedded snapshot from 2026-10-22 14:29 (dot turns amber). Status shown applies to both CVEs. Fixed PHP: 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12.
-  </p>
-</main>
-<footer class="attrib"><div class="wrap"><p>
-  <strong>Data source &amp; licence.</strong> The <em>Actionable</em> and <em>Full</em> views reproduce the software inventory from the
+  <p class="foot"><strong>Live.</strong> On open this page fetches the NCSC-NL list from <code>raw.githubusercontent.com/NCSC-NL/php2shell</code> and rebuilds all views. The Index tab links each supplier to its page in the source list. If the live fetch is blocked it falls back to an embedded snapshot from 2026-10-23 13:18. Status applies to both CVEs. Fixed PHP: 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12.</p><footer class="attrib"><div class="wrap"><p>
+  <strong>Data source &amp; licence.</strong> Every view reproduces the software inventory from the
   <a href="https://github.com/NCSC-NL/php2shell" target="_blank" rel="noopener noreferrer">NCSC-NL php2shell repository</a>,
   &copy; NCSC-NL (Nationaal Cyber Security Centrum, Netherlands), licensed under the
-  <a href="https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12" target="_blank" rel="noopener noreferrer">EUPL-1.2</a>
-  and published as TLP:CLEAR. The <em>Verified</em> set is independently compiled from public vendor advisories.
-  This page is an independent derivative work, distributed under the <a href="LICENSE" target="_blank" rel="noopener noreferrer">EUPL-1.2</a>;
-  it is <strong>not affiliated with or endorsed by NCSC-NL</strong>. Source and attribution:
-  <a href="https://github.com/NCSC-NL/php2shell" target="_blank" rel="noopener noreferrer">github.com/NCSC-NL/php2shell</a>.
+  <a href="LICENSE" target="_blank" rel="noopener noreferrer">EUPL-1.2</a> and published as TLP:CLEAR.
+  Independent derivative work, not affiliated with or endorsed by NCSC-NL. Entries are investigation leads until the vendor confirms.
 </p></div></footer>
+</main>
 <script src="app.js" defer></script>
 </body>
 </html>
