@@ -12,7 +12,7 @@ header.bar{position:sticky;top:0;z-index:9;background:var(--panel);border-bottom
 h1{font-size:19px;font-weight:700;margin:0;letter-spacing:-.01em}
 .cve{font-family:var(--mono);font-size:12px;color:var(--muted)}
 .statusbox{margin-left:auto;display:flex;align-items:center;gap:8px}
-.dot{width:9px;height:9px;border-radius:50%;background:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--muted);flex:none}
 .dot.live{background:var(--live)}.dot.stale{background:var(--stale)}.dot.loading{background:var(--accent);animation:pulse 1s infinite}
 @keyframes pulse{50%{opacity:.3}}
 .livetxt{font-size:12px;color:var(--muted);font-family:var(--mono)}
@@ -40,6 +40,7 @@ td.v{font-weight:600}.sub{color:var(--muted);font-size:12px}.num{font-family:var
 .pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap}
 .p-crit{background:var(--crit-bg);color:var(--crit)}.p-fix{background:var(--fix-bg);color:var(--fix)}
 .p-warn{background:var(--warn-bg);color:var(--warn)}.p-ok{background:var(--ok-bg);color:var(--ok)}.p-info{background:var(--info-bg);color:var(--info)}
+.p-none{background:transparent;color:var(--muted);border:1px dashed var(--line)}
 .mix{display:flex;flex-wrap:wrap;gap:4px}
 a.src{color:var(--accent);text-decoration:none;font-size:12px;word-break:break-word}a.src:hover{text-decoration:underline}
 .empty{padding:28px 12px;text-align:center;color:var(--muted)}
